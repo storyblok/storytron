@@ -10,6 +10,6 @@ Then type few commands known to every Node developer...
 git clone git@bitbucket.org:storyblok/storytron.git
 cd electron-boilerplate
 npm install
-npm start
+npm run start
 ```
 ... and boom! You have running desktop application on your screen.
