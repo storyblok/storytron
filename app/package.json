@@ -1,0 +1,14 @@
+{
+  "name": "storyblok",
+  "productName": "Storyblok",
+  "description": "Storyblok Electron Client",
+  "version": "1.0.0",
+  "author": "Dominik Angerer <dominik.angerer@storyblok.com>",
+  "copyright": "© 2017, Storyblok",
+  "homepage": "https://www.storyblok.com",
+  "license": "MIT",
+  "main": "background.js",
+  "dependencies": {
+    "fs-jetpack": "^0.9.0"
+  }
+}
