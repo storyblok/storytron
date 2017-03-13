@@ -1,8 +1,12 @@
-build: on
+# build: on
 
 os: unstable
 
 skip_tags: true
+
+platform:
+  - x86
+  - x64
 
 environment:
   matrix:
@@ -19,8 +23,8 @@ install:
 test_script:
   - node --version
   - .\node_modules\.bin\npm --version
-  - .\node_modules\.bin\npm test
-  - .\node_modules\.bin\npm run e2e
+  # - .\node_modules\.bin\npm test
+  # - .\node_modules\.bin\npm run e2e
 
 build_script:
   - .\node_modules\.bin\npm run release
