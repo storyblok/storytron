@@ -16,3 +16,4 @@ npm --version
 
 npm install
 npm test & npm run e2e
+npm build
