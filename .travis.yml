@@ -1,20 +1,22 @@
 os:
-  - linux
-  - osx
- 
+- linux
+- osx
 node_js:
- - "4"
-
+- '4'
 before_script:
- - chmod +x ./scripts/travis-build.sh
-
-script: ./scripts/travis-build.sh
-
+- chmod +x ./scripts/travis-build.sh
+script: "./scripts/travis-build.sh"
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 notifications:
   email:
     on_success: never
     on_failure: never
+deploy:
+  provider: releases
+  api_key:
+    secure: SECURE_API_KEY
+  file: "/dist/**/*"
+  on:
+    repo: storyblok/storytron
